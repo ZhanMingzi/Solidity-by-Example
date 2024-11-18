@@ -1,0 +1,34 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
+
+
+contract FunctionSelector{
+
+    string public str;
+
+    uint public amount;
+
+    bytes4 public FunctionSelectorStr;
+
+    event FunctionData(bytes);
+
+    function Function(string memory _str,uint _amount) external returns(bytes memory) {
+
+        str = _str;
+
+        amount = _amount;
+
+        emit FunctionData(msg.data);
+
+        return msg.data;
+
+
+    }
+    //0xea171e210000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000067869616f6d690000000000000000000000000000000000000000000000000000
+    //0xea171e210000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000067869616f6d690000000000000000000000000000000000000000000000000000
+    
+    function CheckFunctionSelector(string memory _FunctionSelectorStr )external {
+
+      FunctionSelectorStr = bytes4(keccak256(bytes(_FunctionSelectorStr)));
+    }
+}
