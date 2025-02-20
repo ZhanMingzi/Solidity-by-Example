@@ -1,0 +1,68 @@
+# Python
+*.py linguist-language=Python
+
+# Solidity
+*.sol linguist-language=Solidity
+
+# JavaScript
+*.js linguist-language=JavaScript
+
+# TypeScript
+*.ts linguist-language=TypeScript
+
+# CSS
+*.css linguist-language=CSS
+
+# HTML
+*.html linguist-language=HTML
+
+# JSON
+*.json linguist-language=JSON
+
+# Markdown
+*.md linguist-language=Markdown
+
+# Java
+*.java linguist-language=Java
+
+# Go
+*.go linguist-language=Go
+
+# C++
+*.cpp linguist-language=C++
+
+# Ruby
+*.rb linguist-language=Ruby
+
+# Rust
+*.rs linguist-language=Rust
+
+# PHP
+*.php linguist-language=PHP
+
+# Swift
+*.swift linguist-language=Swift
+
+# Kotlin
+*.kt linguist-language=Kotlin
+
+# C#
+*.cs linguist-language=CSharp
+
+# Lua
+*.lua linguist-language=Lua
+
+# Objective-C
+*.m linguist-language=Objective-C
+
+# R
+*.r linguist-language=R
+
+# Perl
+*.pl linguist-language=Perl
+
+# Shell
+*.sh linguist-language=Shell
+
+# Haskell
+*.hs linguist-language=Haskell
